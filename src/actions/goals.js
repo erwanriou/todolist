@@ -17,14 +17,6 @@ function removeGoal (id) {
   }
 }
 
-function reveiceData (todos, goals) {
-  return  {
-    type: RECEIVE_DATA,
-    todos,
-    goals
-  }
-}
-
 export function handleDeleteGoal (goal) {
   return (dispatch) => {
     dispatch(removeGoal(goal.id))
